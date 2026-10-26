@@ -6,3 +6,6 @@ dist
 # Ignore the output video from Git but not videos you import into src/.
 out
 whisper.cpp
+
+# Piper (voz) instalado localmente pelo scripts/voz/gerar-voz.sh
+.cache

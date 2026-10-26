@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(scripts/voz/gerar-voz.sh *)",
+      "Bash(./scripts/voz/gerar-voz.sh *)",
+      "Bash(bash scripts/voz/gerar-voz.sh *)",
+      "Bash(/home/user/agente-youtube/scripts/voz/gerar-voz.sh *)"
+    ]
+  }
+}
