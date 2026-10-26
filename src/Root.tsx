@@ -6,6 +6,7 @@ import {
 } from "./CaptionedVideo";
 import { Naufragio } from "./Naufragio";
 import { DURACAO, FPS } from "./Naufragio/roteiro";
+import { Patinhos } from "./Patinhos";
 
 // Each <Composition> is an entry in the sidebar!
 
@@ -28,6 +29,14 @@ export const RemotionRoot: React.FC = () => {
         component={Naufragio}
         durationInFrames={DURACAO}
         fps={FPS}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Patinhos"
+        component={Patinhos}
+        durationInFrames={900}
+        fps={30}
         width={1080}
         height={1920}
       />
