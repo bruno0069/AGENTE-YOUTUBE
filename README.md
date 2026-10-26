@@ -1,4 +1,45 @@
-# Remotion video
+# Agente YouTube
+
+Vídeos verticais (1080×1920) feitos com [Remotion](https://www.remotion.dev), animados em código (SVG + React).
+
+## Vídeos
+
+| Composição | Arquivo | Duração | Tema |
+|---|---|---|---|
+| `Naufragio` | `renders/naufragio-titanic.mp4` | 30 s | O naufrágio do Titanic (teste) |
+| `Patinhos` | `renders/patinhos-shorts.mp4` | 30 s | Infantil: contar até 5 com patinhos |
+| `Girafinha` | `renders/girafinha-gigi.mp4` | 60 s | Infantil: a girafinha Gigi ensina as cores |
+
+O código de cada vídeo está em `src/<Composição>/`. A imagem de referência da girafinha está em `referencias/`.
+
+Nenhum vídeo tem narração: os textos aparecem em balões/legendas e o áudio é só música e efeitos.
+
+## Comandos
+
+```console
+npm i
+npm run dev                                         # abre o Remotion Studio
+npx remotion render src/index.ts Girafinha out/girafinha.mp4
+```
+
+## Áudios
+
+Os arquivos `public/*/musica.wav` e `public/naufragio/ambiente.wav` foram gerados por código, sem samples externos:
+
+```console
+python3 scripts/audio/musica_patinhos.py
+python3 scripts/audio/musica_girafinha.py
+scripts/audio/ambiente_naufragio.sh                 # requer ffmpeg
+```
+
+## Fontes
+
+Os vídeos usam Inter Display (licença OFL, ver `public/naufragio/inter-license.txt`), porque a fonte do template não tem ã, õ, ç, â, ê, í, à.
+
+---
+
+## Template original (Remotion TikTok)
+
 
 <p align="center">
   <a href="https://github.com/remotion-dev/logo">
